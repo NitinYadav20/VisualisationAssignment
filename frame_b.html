@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		ul.tab 
+		{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			border: 1px solid #ccc;
+			background-color: #f1f1f1;
+		}
+		ul.tab li 
+		{
+			float: left;
+		}
+		ul.tab li a 
+		{
+			display: inline-block;
+			color: black;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			transition: 0.3s;
+			font-size: 17px;
+		}
+		ul.tab li a:hover 
+		{
+			background-color: #ddd;
+		}
+		ul.tab li a:focus, .active 
+		{
+			background-color: #ccc;
+		}
+		.tabcontent 
+		{
+			display: none;
+			padding: 6px 12px;
+			border: 1px solid #ccc;
+			border-top: none;
+		}
+	</style>
+</head>
+<body>
+<h1 align="center"> TRENDS </h1>
+
+<ul class="tab">
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'A')">1</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'B')">2</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'C')">3</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'D')">4</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'E')">5</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'F')">6</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'G')">7</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'H')">8</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'I')">9</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'J')">10</a></li>
+</ul>
+
+<div id="A" class="tabcontent">
+  <h3>Breakdown of USA Election 2016 by States</h3>
+  <br><br>
+  <p align="justify"> This graph shows count of votes casted in USA Elections 2016 by states. Each bar shows the count of vote of the corresponding state named beside them. X-axis shows number of votes and Y-axis shows name of the state. This graph is plotted in Tableau visualisation tool. In the coming tabs, different diversities in votes that were casted are represented graphically.</p>
+  <img src="tableau-1.png" alt="No img" height="420" width="560"/>
+</div>
+
+<div id="B" class="tabcontent">
+  <h3>Breakdown of Votes in California by Counties</h3>
+  <br><br>
+  <p align="justify">This graph shows count of votes casted in USA Elections 2016 by counties of California. Each bubble shows the count of vote of the corresponding county. X-axis shows name of the counties and Y-axis shows the number of votes. This graph is plotted in Tableau visualisation tool.</p>
+  <img src="tableau-2.png" alt="Smiley face" height="560" width="760">
+</div>
+
+<div id="C" class="tabcontent">
+	<h3>Breakdown of Socio-economic Status in Los Angeles by Ethnicity and Votes by Candidate</h3>
+	<br><br>
+	<p align="justify">
+	  The first graph shows count of votes casted in USA Elections 2016 by each candidate in the state of Los Angeles. Each bubble shows the count of vote of the corresponding candidate. X-axis shows the number of votes and Y-axis shows the names of candidates. The second graph represents the diverse ethnicity in socio-economic status in Los Angeles. Each bubble represents average number of people with same ethnicity. X-axis shows different ethnicity and Y-axis shows the economic percentile of corresponding ethnic group. These graphs are plotted using Tableau visualisation tool.
+	</p>
+	<img src="tableau-3.png" alt="Smiley face" height="560" width="760">
+</div>
+<div id="D" class="tabcontent">
+  	<h3>Breakdown of People in Los Angeles by their Educational Background and Ethnicity</h3>
+  	<br><br>
+  	<p align="justify">
+	  The first graph shows diversity in Los Angeles by ethnicity. Each bar shows the percentile of people in the corresponding ethnicity. X-axis shows different ethnicity and Y-axis shows the percentile of people. The second graph represents diversity in Los Angeles by educational background. Each bar represents average number of people with same educational background. X-axis shows different educational backgrounds and Y-axis shows the percentile of people falling under same educational background. These graphs are plotted using Tableau visualisation tool. 
+	</p>
+	<img src="tableau-4.png" alt="No img" height="420" width="560"/>
+</div>
+
+<div id="E" class="tabcontent">
+  <h3>Breakdown of Counties by Republican Candidate Winners, Ethnicity and Educational Background</h3>
+  <br><br>
+  <p align="justify">
+	  This graph shows the breakdown of Republican candidates that won with respect to the people that belong to white ethnicity and education attainment. X-axis shows number of white people and Y-axis shows number of people attained education. These graphs are plotted using R language in RStudio and published using RPubs, an open resource platform. 
+  </p>
+  <img src="republican-1.png" alt="Smiley face" height="560" width="760">
+</div>
+
+<div id="F" class="tabcontent">
+  <h3>Breakdown of Whites and Non-Hispanic Whites by Republican Candidate Winners</h3>
+  <br><br>
+  <p align="justify">
+	  This graph shows the breakdown of the Republican candidates that won and to the people that belong to white ethnicity as well as those who attainted education. X-axis shows percentile of white and non-hispanic people and Y-axis shows number of people attained education. These graphs are plotted using R language in RStudio and published using RPubs, an open resource platform. 
+  </p>
+  <img src="republican-2.png" alt="Smiley face" height="560" width="760">
+</div>
+
+<div id="G" class="tabcontent">
+  <h3>Breakdown of Income, Educational Attainment by Republican Candidate Winners</h3>
+  <br><br>
+  <p align="justify">
+  	This graph shows the breakdown of the Republican candidates that won by different income groups  and also those who attainted education. X-axis shows percentile of different group of incomes and Y-axis shows number of people attained education. These graphs are plotted using R language in RStudio and published using RPubs, an open resource platform.
+  </p>
+  <img src="republican-3.png" alt="No img" height="420" width="560"/>
+</div>
+
+<div id="H" class="tabcontent">
+  <h3>Breakdown of Ethnicity and Educational Background by Democrat Candidate Winners</h3>
+  <br><br>
+  <p align="justify">
+	  This graph shows the breakdown of Democrat candidates that won with respect to the people that belong to white ethnicity and education attainment. X-axis shows number of white people and Y-axis shows number of people attained education. These graphs are plotted using R language in RStudio and published using RPubs, an open resource platform. 
+  </p>
+  <img src="democrat-1.png" alt="Smiley face" height="560" width="760">
+</div>
+
+<div id="I" class="tabcontent">
+  	<h3>Breakdown of Counties by Democrat Candidate Winners, Percentage of Whites and Non-Hispanic Whites</h3>
+  	<br><br>
+  	<p align="justify">
+	  This graph shows the breakdown of the Democrat candidates that won and to the people that belong to white ethnicity as well as those who attainted education. X-axis shows percentile of white and non-hispanic people and Y-axis shows number of people attained education. These graphs are plotted using R language in RStudio and published using RPubs, an open resource platform.  
+	</p>
+	<img src="democrat-2.png" alt="Smiley face" height="560" width="760">
+</div>
+
+<div id="J" class="tabcontent">
+  	<h3>Breakdown of Income, Educational Attainment by Democrat Candidate Winners</h3>
+  	<br><br>
+  	<p align="justify">
+  		This graph shows the breakdown of the Democrat candidates that won by different income groups  and also those who attainted education. X-axis shows percentile of different group of incomes and Y-axis shows number of people attained education. These graphs are plotted using R language in RStudio and published using RPubs, an open resource platform.
+  	</p>
+  	<img src="democrat-3.png" alt="Smiley face" height="560" width="760">
+</div>
+
+<script>
+function openCity(evt, cityName) 
+{
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the link that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+</body>
+</html>
